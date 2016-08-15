@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="选择城市"/>
+    <LinearLayout
+        android:id="@+id/ll_prov"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/SpinnerText"
+            android:text="省/市"/>
+        <Spinner
+            android:id="@+id/sp_prov"
+            style="@style/Spinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_district"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_prov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/SpinnerText"
+            android:text="市/市"/>
+        <Spinner
+            android:id="@+id/sp_district"
+            style="@style/Spinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/SpinnerText"
+            android:text="市/区"/>
+        <Spinner
+            android:id="@+id/sp_namecn"
+            style="@style/Spinner" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:text="取消"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/ic_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bt_sure"
+        android:text="确定"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/ic_bt"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
